@@ -1,0 +1,11 @@
+RingOscilator
+and_1,output,user_entered
+and_1~0,comb,compiler_generated
+en,input,user_entered
+not_1,output,user_entered
+not_2,output,user_entered
+not_3,output,user_entered
+~ASDO~,input,compiler_generated
+~LVDS41p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered
