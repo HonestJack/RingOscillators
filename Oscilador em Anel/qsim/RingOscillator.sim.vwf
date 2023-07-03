@@ -1,0 +1,460 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 1000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("and3_1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("and5_1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("en3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("en5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("not3_1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not3_2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not3_3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not5_1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not5_2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not5_3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not5_4")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("not5_5")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("and3_1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.902;
+		NODE
+		{
+			REPEAT = 741;
+			LEVEL 1 FOR 0.526;
+			LEVEL 0 FOR 0.526;
+		}
+		LEVEL 1 FOR 0.468;
+		LEVEL 0 FOR 164.098;
+	}
+}
+
+TRANSITION_LIST("and5_1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.015;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 1 FOR 0.393;
+			LEVEL 0 FOR 0.393;
+		}
+		LEVEL 1 FOR 0.288;
+		LEVEL 0 FOR 164.985;
+	}
+}
+
+TRANSITION_LIST("en3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 780.0;
+		LEVEL 0 FOR 170.0;
+	}
+}
+
+TRANSITION_LIST("en5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 780.0;
+		LEVEL 0 FOR 170.0;
+	}
+}
+
+TRANSITION_LIST("not3_1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 56.049;
+		NODE
+		{
+			REPEAT = 741;
+			LEVEL 0 FOR 0.526;
+			LEVEL 1 FOR 0.526;
+		}
+		LEVEL 0 FOR 0.468;
+		LEVEL 1 FOR 163.951;
+	}
+}
+
+TRANSITION_LIST("not3_2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 55.981;
+		NODE
+		{
+			REPEAT = 741;
+			LEVEL 0 FOR 0.526;
+			LEVEL 1 FOR 0.526;
+		}
+		LEVEL 0 FOR 0.468;
+		LEVEL 1 FOR 164.019;
+	}
+}
+
+TRANSITION_LIST("not3_3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.774;
+		NODE
+		{
+			REPEAT = 741;
+			LEVEL 1 FOR 0.526;
+			LEVEL 0 FOR 0.526;
+		}
+		LEVEL 1 FOR 0.468;
+		LEVEL 0 FOR 164.226;
+	}
+}
+
+TRANSITION_LIST("not5_1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 55.547;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 0 FOR 0.393;
+			LEVEL 1 FOR 0.393;
+		}
+		LEVEL 0 FOR 0.288;
+		LEVEL 1 FOR 164.453;
+	}
+}
+
+TRANSITION_LIST("not5_2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.547;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 1 FOR 0.393;
+			LEVEL 0 FOR 0.393;
+		}
+		LEVEL 1 FOR 0.288;
+		LEVEL 0 FOR 164.453;
+	}
+}
+
+TRANSITION_LIST("not5_3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 55.025;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 0 FOR 0.393;
+			LEVEL 1 FOR 0.393;
+		}
+		LEVEL 0 FOR 0.288;
+		LEVEL 1 FOR 164.975;
+	}
+}
+
+TRANSITION_LIST("not5_4")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 55.025;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 1 FOR 0.393;
+			LEVEL 0 FOR 0.393;
+		}
+		LEVEL 1 FOR 0.288;
+		LEVEL 0 FOR 164.975;
+	}
+}
+
+TRANSITION_LIST("not5_5")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 55.015;
+		NODE
+		{
+			REPEAT = 992;
+			LEVEL 0 FOR 0.393;
+			LEVEL 1 FOR 0.393;
+		}
+		LEVEL 0 FOR 0.288;
+		LEVEL 1 FOR 164.985;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "and3_1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "and5_1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "en3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "en5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not3_1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not3_2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not3_3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not5_1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not5_2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not5_3";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not5_4";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "not5_5";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;
