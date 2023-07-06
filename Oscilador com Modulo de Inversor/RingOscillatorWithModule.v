@@ -1,26 +1,34 @@
+module inverter
+	(
+		input in,
+		output out
+	);
+	
+	assign out = ~in;
+	
+endmodule
+
 module RingOscillatorBase 
 	#(parameter N = 5)
 	(
 		input  en,
 		
-		output reg and_1   /*synthesis keep*/
+		output and_1   /*synthesis keep*/
 	);
 
-	reg [N-1:0] notGate /*synthesis keep*/;
+	wire [N-1:0] notGate /*synthesis keep*/;
 	
-	integer i;
+	genvar i;
 	generate
-	always @ (*) begin
-			and_1 <= en & notGate[N-1];
-			notGate[0] <= ~and_1;
-			for (i = 1; i < N; i = i +1) begin: inverter_chain
-				notGate[i] <= ~notGate[i - 1];
-			end
-	end
+		assign and_1 = en & notGate[N-1];
+		assign notGate[0] = ~and_1;
+		for (i = 1; i < N; i = i +1) begin: inverter_chain
+			inverter inv(notGate[i - 1], notGate[i]);
+		end
 	endgenerate
 endmodule
 
-module RingOscillatorGenerate
+module RingOscillatorWithModule
 	(
 		input en,
 		output run,
