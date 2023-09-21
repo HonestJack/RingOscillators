@@ -1,0 +1,8 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="simu" simType="ModelSim">
+    <Source worklib="work" path="Oscillator.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="Sim.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo3l"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="testbench"/>
+</BaliSimProject>

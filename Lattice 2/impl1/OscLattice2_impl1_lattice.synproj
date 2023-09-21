@@ -1,0 +1,41 @@
+-a "MachXO3LF"
+-d LCMXO3LF-6900C
+-t CABGA256
+-s 5
+-frequency 2000
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 0
+-remove_duplicate_regs 0
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 5000
+
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg auto
+
+
+-lpf 1
+-p "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Lattice 2"
+-ver "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Lattice 2/Osc.v"
+-top RingOscillatorGenerate
+
+
+-p "C:/lscc/diamond/3.12/ispfpga/xo3c00f/data" "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Lattice 2/impl1" "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Lattice 2"
+
+-ngd "OscLattice2_impl1.ngd"
+

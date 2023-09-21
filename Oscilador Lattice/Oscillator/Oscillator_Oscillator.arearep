@@ -1,0 +1,196 @@
+----------------------------------------------------------------------
+Report for cell RingOscillatorGenerate.TECH
+Register bits:  279 of 7485 (3.727%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        25          100.0
+                            FD1P3AX        18          100.0
+                            FD1P3BX        34          100.0
+                            FD1P3DX       186          100.0
+                            FD1S3DX        41          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                                INV         1          100.0
+                               LUT4      4418          100.0
+                                 OB         9          100.0
+                               OSCH         1          100.0
+                              PFUMX        32          100.0
+                        VERIFIC_GND         4          100.0
+ pmi_ram_dpXbnonesadr1121121164d71c         1          100.0
+pmi_ram_dpXbnonesadr471284712811ad3d8c         1          100.0
+SUB MODULES
+          RingOscillatorBase_uniq_1         1
+          RingOscillatorBase_uniq_2         1
+          RingOscillatorBase_uniq_3         1
+                     reveal_coretop         1
+         ringoscillatorgenerate_la0         1
+    ringoscillatorgenerate_la0_trig         1
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=4,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="XO3LF")         1
+rvl_tm(NUM_TRACE_SIGNALS=4,NUM_TRACE_SAMPLES=128,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=504829061,LSCC_FAMILY="XO3LF")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                              TOTAL      4785
+----------------------------------------------------------------------
+Report for cell RingOscillatorBase_uniq_3.v1
+Instance Path : ring4999
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4      3000           67.9
+                              TOTAL      3000
+----------------------------------------------------------------------
+Report for cell RingOscillatorBase_uniq_1.v1
+Instance Path : ring7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8            0.2
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell reveal_coretop.v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        25          100.0
+                            FD1P3AX        18          100.0
+                            FD1P3BX        34          100.0
+                            FD1P3DX       186          100.0
+                            FD1S3DX        41          100.0
+                                INV         1          100.0
+                               LUT4       398            9.0
+                              PFUMX        26           81.3
+                        VERIFIC_GND         3           75.0
+ pmi_ram_dpXbnonesadr1121121164d71c         1          100.0
+pmi_ram_dpXbnonesadr471284712811ad3d8c         1          100.0
+SUB MODULES
+         ringoscillatorgenerate_la0         1
+    ringoscillatorgenerate_la0_trig         1
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=4,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="XO3LF")         1
+rvl_tm(NUM_TRACE_SIGNALS=4,NUM_TRACE_SAMPLES=128,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=504829061,LSCC_FAMILY="XO3LF")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                              TOTAL       742
+----------------------------------------------------------------------
+Report for cell ringoscillatorgenerate_la0.v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        25          100.0
+                            FD1P3AX        18          100.0
+                            FD1P3BX        34          100.0
+                            FD1P3DX       186          100.0
+                            FD1S3DX        41          100.0
+                               LUT4       376            8.5
+                              PFUMX        25           78.1
+                        VERIFIC_GND         3           75.0
+ pmi_ram_dpXbnonesadr1121121164d71c         1          100.0
+pmi_ram_dpXbnonesadr471284712811ad3d8c         1          100.0
+SUB MODULES
+    ringoscillatorgenerate_la0_trig         1
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+rvl_jtag_int(NUM_TRACE_SIGNALS=4,NUM_TRIGGER_SIGNALS=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="XO3LF")         1
+rvl_tm(NUM_TRACE_SIGNALS=4,NUM_TRACE_SAMPLES=128,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=504829061,LSCC_FAMILY="XO3LF")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                              TOTAL       717
+----------------------------------------------------------------------
+Report for cell ringoscillatorgenerate_la0_trig.v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.trig_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           36.0
+                            FD1P3AX        16           88.9
+                            FD1P3BX         2            5.9
+                            FD1P3DX        32           17.2
+                            FD1S3DX        15           36.6
+                               LUT4        68            1.5
+                              PFUMX         4           12.5
+                        VERIFIC_GND         1           25.0
+ pmi_ram_dpXbnonesadr1121121164d71c         1          100.0
+SUB MODULES
+      rvl_decode(NUM_TU=1,NUM_TE=1)         1
+ rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3)         1
+rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="XO3LF")         1
+              rvl_tu(NUM_TU_BITS=1)         1
+                              TOTAL       152
+----------------------------------------------------------------------
+Report for cell rvl_tu(NUM_TU_BITS=1).v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.trig_u.tu_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         5            2.7
+                            FD1S3DX         3            7.3
+                               LUT4         9            0.2
+                              PFUMX         1            3.1
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell rvl_te(NUM_TU=1,NUM_TE_ROW=2,NUM_TE_COL=1,TE_EBR=1,NUM_TE_EVENT_CNT_BITS=0,LSCC_FAMILY="XO3LF").v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.trig_u.te_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           36.0
+                            FD1P3AX        16           88.9
+                            FD1P3BX         1            2.9
+                            FD1P3DX        21           11.3
+                            FD1S3DX         7           17.1
+                               LUT4        37            0.8
+                              PFUMX         1            3.1
+                        VERIFIC_GND         1           25.0
+ pmi_ram_dpXbnonesadr1121121164d71c         1          100.0
+                              TOTAL        94
+----------------------------------------------------------------------
+Report for cell rvl_tcnt(NUM_TE=1,NUM_TCNT_BITS=3).v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.trig_u.tcnt_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         1            2.9
+                            FD1P3DX         6            3.2
+                            FD1S3DX         5           12.2
+                               LUT4        16            0.4
+                              PFUMX         1            3.1
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell rvl_decode(NUM_TU=1,NUM_TE=1).v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.trig_u.decode_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell rvl_tm(NUM_TRACE_SIGNALS=4,NUM_TRACE_SAMPLES=128,NUM_TRIGGER_SIGNALS=1,NUM_TRIG_MAX=1,REVEAL_SIG=504829061,LSCC_FAMILY="XO3LF").v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.tm_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12           48.0
+                            FD1P3DX        80           43.0
+                            FD1S3DX        16           39.0
+                               LUT4       126            2.9
+                              PFUMX         9           28.1
+                        VERIFIC_GND         1           25.0
+pmi_ram_dpXbnonesadr471284712811ad3d8c         1          100.0
+                              TOTAL       245
+----------------------------------------------------------------------
+Report for cell rvl_jtag_int(NUM_TRACE_SIGNALS=4,NUM_TRIGGER_SIGNALS=1).v1
+Instance Path : RingOscillatorGenerate_reveal_coretop_instance.ringoscillatorgenerate_la0_inst_0.jtag_int_u
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4           16.0
+                            FD1P3AX         2           11.1
+                            FD1P3BX        32           94.1
+                            FD1P3DX        74           39.8
+                            FD1S3DX        10           24.4
+                               LUT4       182            4.1
+                              PFUMX        12           37.5
+                        VERIFIC_GND         1           25.0
+                              TOTAL       317
+----------------------------------------------------------------------
+Report for cell RingOscillatorBase_uniq_2.v1
+Instance Path : ring1001
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4      1002           22.7
+                              TOTAL      1002

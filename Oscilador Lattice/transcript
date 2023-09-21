@@ -1,0 +1,29 @@
+# Reading pref.tcl
+# do {C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/simu/simu.mdo}
+# Loading project simu
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 14:48:09 on Aug 01,2023
+# vlog -reportprogress 300 "+incdir+C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador" Lattice -work work C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Oscillator.v 
+# ** Error: (vlog-7) Failed to open design unit file "Lattice" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 14:48:10 on Aug 01,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/lscc/diamond/3.12/modeltech/win32loem/vlog failed.
+# Error in macro C:\Users\mucar\OneDrive\Documentos\UFRGS\TCC\Oscilador Lattice\simu\simu.mdo line 13
+# C:/lscc/diamond/3.12/modeltech/win32loem/vlog failed.
+#     while executing
+# "vlog  +incdir+C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice  -work work  "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Latt..."
+#     invoked from within
+# "if {![file exists "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/simu/simu.mpf"]} { 
+# 	project new "C:/Users/mucar/OneDrive/Documentos..."
+# error: CanCompile -> can't read "ProjectFiles(C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v)": no such element in array
+#  Trace back: can't read "ProjectFiles(C:\Users\mucar\OneDrive\Documentos\UFRGS\TCC\Oscilador Lattice\Sim.v)": no such element in array
+#     while executing
+# ".vcop Eval Project::compileAllFiles"
+#     (menu invoke)
+#    <2:C:/lscc/diamond/3.12/modeltech/win32loem/tk8.6/bgerror.tcl:106: ::tkerror {can't read "ProjectFiles(C:\Users\mucar\OneDrive\Documentos\UFRGS\TCC\Oscilador Lattice\Sim.v)": no such element in array}
+#    <1:eval:1: ::tk::dialog::error::bgerror {can't read "ProjectFiles(C:\Users\mucar\OneDrive\Documentos\UFRGS\TCC\Oscilador Lattice\Sim.v)": no such element in array}
+# error: CanCompile -> can't read "ProjectFiles(C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v)": no such element in array

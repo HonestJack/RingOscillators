@@ -1,0 +1,17 @@
+if {![file exists "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/simu/simu.mpf"]} { 
+	project new "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/simu" simu
+	project addfile "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Oscillator.v"
+	project addfile "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice  -work work  "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Oscillator.v"
+	vlog  +incdir+C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice  -work work  "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/Sim.v"
+} else {
+	project open "C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/simu/simu"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo3l  testbench
+view wave
+add wave /*
+run 1000ns

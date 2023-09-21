@@ -1,0 +1,41 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>ter 1. ago 16:41:13 2023</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LCMXO3LF-6900C</DeviceName>
+  <DeviceID>0x612BD043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>rev.rvl</RVLFileName>
+  <RVSFileName>rev.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="en" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="run" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="out1001" NodeType="0" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="out4999" NodeType="0" PortIndex="3"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

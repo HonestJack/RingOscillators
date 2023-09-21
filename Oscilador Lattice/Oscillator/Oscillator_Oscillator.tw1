@@ -1,0 +1,306 @@
+
+Loading design for application trce from file oscillator_oscillator_map.ncd.
+Design name: RingOscillatorGenerate
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.16.
+Performance Hardware Data Status:   Preliminary    Version 37.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Thu Aug 17 14:50:44 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Oscillator_Oscillator.tw1 -gui -msgset C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/promote.xml Oscillator_Oscillator_map.ncd Oscillator_Oscillator.prf 
+Design file:     oscillator_oscillator_map.ncd
+Preference file: oscillator_oscillator.prf
+Device,speed:    LCMXO3LF-6900C,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+3 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "fpga_clock_keep_keep_2" 133.000000 MHz ;
+            1208 items scored, 90 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 1.579ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/jupdate_reclk_i2  (from fpga_clock_keep_keep_2 +)
+   Destination:    FF         Data in        RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/tm_u/num_pre_trig_frm_i0_i6  (to fpga_clock_keep_keep_2 +)
+
+   Delay:               8.849ns  (30.2% logic, 69.8% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.849ns physical path delay RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_294 to RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_282 exceeds
+      7.519ns delay constraint less
+      0.249ns CE_SET requirement (totaling 7.270ns) by 1.579ns
+
+ Physical Path Details:
+
+      Data path RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_294 to RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_282:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *SLICE_294.CLK to */SLICE_294.Q0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_294 (from fpga_clock_keep_keep_2)
+ROUTE         4   e 1.030 */SLICE_294.Q0 to */SLICE_158.A1 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/jupdate_reclk[2]
+CTOF_DEL    ---     0.452 */SLICE_158.A1 to */SLICE_158.F1 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_158
+ROUTE         3   e 1.030 */SLICE_158.F1 to */SLICE_275.A0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/n7259
+CTOF_DEL    ---     0.452 */SLICE_275.A0 to */SLICE_275.F0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_275
+ROUTE         8   e 1.030 */SLICE_275.F0 to   SLICE_316.B0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/wen_N_4234
+CTOF_DEL    ---     0.452   SLICE_316.B0 to   SLICE_316.F0 SLICE_316
+ROUTE         2   e 1.030   SLICE_316.F0 to */SLICE_303.D0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/n6635
+CTOF_DEL    ---     0.452 */SLICE_303.D0 to */SLICE_303.F0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_303
+ROUTE         3   e 1.030 */SLICE_303.F0 to */SLICE_326.C1 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/n2416
+CTOF_DEL    ---     0.452 */SLICE_326.C1 to */SLICE_326.F1 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/SLICE_326
+ROUTE         4   e 1.030 */SLICE_326.F1 to */SLICE_282.CE RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/clk[0]_N_keep_enable_36 (to fpga_clock_keep_keep_2)
+                  --------
+                    8.849   (30.2% logic, 69.8% route), 6 logic levels.
+
+Warning: 109.914MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "fpga_clock_keep_keep_2"  |             |             |
+133.000000 MHz ;                        |  133.000 MHz|  109.914 MHz|   6 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/jtag_int_u/n7259                       |       3|      50|     55.56%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/wen_N_4234                             |       8|      50|     55.56%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/n12                               |       1|      40|     44.44%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/n13                               |      12|      40|     44.44%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/clk[0]_N_keep_enable_60           |       4|      32|     35.56%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/jtag_int_u/jupdate_reclk[2]            |       4|      25|     27.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/jtag_int_u/jupdate_reclk[3]            |       3|      25|     27.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/n6635                                  |       2|      22|     24.44%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/n1837                                  |       4|      20|     22.22%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/n2416                                  |       3|      18|     20.00%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/n2899                             |       7|      16|     17.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/n7230                             |       3|      16|     17.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/n7231                                  |       2|      16|     17.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/trig_u/clk[0]_N_keep_enable_79         |       8|      16|     17.78%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/post_trig_cntr[3]                 |       5|      10|     11.11%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/post_trig_cntr[4]                 |       4|      10|     11.11%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/post_trig_cntr[5]                 |       3|      10|     11.11%
+                                        |        |        |
+RingOscillatorGenerate_reveal_coretop_in|        |        |
+stance/ringoscillatorgenerate_la0_inst_0|        |        |
+/tm_u/post_trig_cntr[0]                 |       8|      10|     11.11%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 120
+   No transfer within this clock domain is found
+
+Clock Domain: fpga_clock_keep_keep_2   Source: rc_oscillator.OSC   Loads: 89
+   Covered under: FREQUENCY NET "fpga_clock_keep_keep_2" 133.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 90  Score: 57762
+Cumulative negative slack: 57762
+
+Constraints cover 1208 paths, 1 nets, and 2577 connections (99.08% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Thu Aug 17 14:50:44 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Oscillator_Oscillator.tw1 -gui -msgset C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/promote.xml Oscillator_Oscillator_map.ncd Oscillator_Oscillator.prf 
+Design file:     oscillator_oscillator_map.ncd
+Preference file: oscillator_oscillator.prf
+Device,speed:    LCMXO3LF-6900C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+3 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "fpga_clock_keep_keep_2" 133.000000 MHz ;
+            1208 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/capture_reclk_i0  (from fpga_clock_keep_keep_2 +)
+   Destination:    FF         Data in        RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/capture_reclk_i1  (to fpga_clock_keep_keep_2 +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_61 to RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_61 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_61 to RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_61:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_61.CLK to *u/SLICE_61.Q0 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/SLICE_61 (from fpga_clock_keep_keep_2)
+ROUTE         1   e 0.199 *u/SLICE_61.Q0 to *u/SLICE_61.M1 RingOscillatorGenerate_reveal_coretop_instance/ringoscillatorgenerate_la0_inst_0/jtag_int_u/capture_reclk[0] (to fpga_clock_keep_keep_2)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "fpga_clock_keep_keep_2"  |             |             |
+133.000000 MHz ;                        |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK   Loads: 120
+   No transfer within this clock domain is found
+
+Clock Domain: fpga_clock_keep_keep_2   Source: rc_oscillator.OSC   Loads: 89
+   Covered under: FREQUENCY NET "fpga_clock_keep_keep_2" 133.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: jtaghub16_jtck   Source: xo2chub/genblk7.jtagf_u.JTCK
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1208 paths, 1 nets, and 2577 connections (99.08% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 90 (setup), 0 (hold)
+Score: 57762 (setup), 0 (hold)
+Cumulative negative slack: 57762 (57762+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

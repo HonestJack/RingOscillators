@@ -1,17 +1,3 @@
-module inverter
-	(
-		input in,
-		output out
-	);
-	
-	assign out = ~in;
-	
-//	always @ (*) begin
-//		out <= ~in;
-//	end
-	
-endmodule
-
 module RingOscillatorBase 
 	#(parameter N = 5)
 	(
@@ -24,14 +10,13 @@ module RingOscillatorBase
 	
 	integer i;
 	generate
-		always @ (*) begin
+	always @ (*) begin
 			and_1 <= en & notGate[N-1];
 			notGate[0] <= ~and_1;
-			for (i = 1; i < N; i = i +1) begin
+			for (i = 1; i < N; i = i +1) begin: inverter_chain
 				notGate[i] <= ~notGate[i - 1];
-				//inverter inv(notGate[i - 1], notGate[i]);
 			end
-		end
+	end
 	endgenerate
 endmodule
 

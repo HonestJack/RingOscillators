@@ -1,0 +1,26 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/rev.rvl" Date="2023-08-11">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" Synthesis="lse" DeviceFamily="MachXO3LF" DesignName="Oscillator"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="504829061" Name="RingOscillatorGenerate_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="fpga_clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="128"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_RingOscillatorGenerate_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="en"/>
+                <Sig Type="SIG" Name="run"/>
+                <Sig Type="SIG" Name="out1001"/>
+                <Sig Type="SIG" Name="out4999"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="en,"/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

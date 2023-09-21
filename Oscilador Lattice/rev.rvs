@@ -1,0 +1,21 @@
+<Project ModBy="Analyzer" Name="C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Oscilador Lattice/rev.rvs" Date="2023-08-11">
+ <Core Name="RingOscillatorGenerate_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="128" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="en"/>
+    <Sig Name="run"/>
+    <Sig Name="out1001"/>
+    <Sig Name="out4999"/>
+   </Trace>
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="1" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>
