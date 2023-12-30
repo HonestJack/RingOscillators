@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Sep 21 16:13:35 2023
+# Process ID: 11620
+# Current directory: C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Kintex_2/Bootable_File
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15104 C:\Users\mucar\OneDrive\Documentos\UFRGS\TCC\Kintex_2\Bootable_File\project_1.xpr
+# Log file: C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Kintex_2/Bootable_File/vivado.log
+# Journal file: C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Kintex_2/Bootable_File\vivado.jou
+# Running On: DESKTOP-KJGUP1A, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8459 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Kintex_2/Bootable_File/project_1.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/mucar/OneDrive/Documentos/UFRGS/TCC/Kintex_2/Bootable_File/design_1_wrapper.xsa
